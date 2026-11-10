@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+title: PairedRelPerm
+version: 0.2.0
+message: "Please cite the repository release and version used."
+authors:
+  - family-names: Ali
+    given-names: Ahmed

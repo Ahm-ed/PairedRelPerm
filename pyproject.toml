@@ -1,0 +1,20 @@
+[build-system]
+requires=["setuptools>=68","wheel"]
+build-backend="setuptools.build_meta"
+[project]
+name="pairedrelperm"
+version="0.2.0"
+description="Paired uncertainty analysis of before/after relative-permeability data"
+readme="README.md"
+license={text="MIT"}
+requires-python=">=3.10"
+authors=[{name="Ahmed Ali"}]
+dependencies=["numpy>=1.24","pandas>=2.0","scipy>=1.10","matplotlib>=3.7","PyYAML>=6.0"]
+[project.optional-dependencies]
+dev=["pytest>=7","ruff>=0.4"]
+[project.scripts]
+pairedrelperm="pairedrelperm.cli:main"
+[tool.setuptools.packages.find]
+where=["src"]
+[tool.pytest.ini_options]
+pythonpath=["src"]
